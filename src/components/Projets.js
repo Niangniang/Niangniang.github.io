@@ -107,7 +107,7 @@ function Projets() {
         "- Traiter et suivre les demandes clients\n" +
         "- Consulter l'historique des transactions\n" +
         "- Assurer le monitoring",
-      technologies: ["React", "Node.js", "MongoDB"],
+      technologies: ["React", "Spring", "Postgres"],
       lienGithub: "https://github.com/Niangniang/Front_web_app_maire",
       lienDemo: "#",
       stats: {
@@ -132,7 +132,7 @@ function Projets() {
         "L'application permet aux clients de s'inscrire et commander les services d'un artisan selon leur corps de métier, sans déplacement.\n" +
         "Elle propose également des contrats de maintenance aux clients et entreprises.\n" +
         "Les clients peuvent signer des contrats de maintenance avec une fréquence définie pour différents corps de métier : mécanique, électricité, plomberie, etc.",
-      technologies: ["Express", "TypeScript", "PostgreSQL"],
+      technologies: ["Django", "Redis", "PostgreSQL", "Websockets"],
       lienGithub: "#",
       lienDemo: "#",
       stats: {
@@ -159,7 +159,7 @@ function Projets() {
         "L'application permet aux clients de créer un compte et gérer leur portefeuille électronique avec des cartes bancaires virtuelles.\n" +
         "Elle propose des transactions interbancaires, des transferts banque-wallet et wallet-wallet.\n" +
         "Les clients peuvent utiliser leur compte pour effectuer des paiements en ligne.",
-      technologies: ["Express", "TypeScript", "PostgreSQL"],
+      technologies: ["Spring Boot", "Microservices", "PostgreSQL"],
       lienGithub: "https://github.com/Niangniang/Backend_bakka",
       lienDemo: "#",
       stats: {
