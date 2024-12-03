@@ -40,40 +40,140 @@ function Projets() {
 
   const projets = [
     {
-      titre: "Application E-commerce",
+      titre: "Dashboard Ma Mairie",
       type: "web",
-      description: "Plateforme de vente en ligne avec panier et paiement",
+      description:
+        "Application d'administration pour les back-offices de l'application \"Ma Mairie\"",
       detailDescription:
-        "Une application e-commerce complète permettant aux utilisateurs de parcourir des produits, gérer leur panier et effectuer des paiements sécurisés. Le projet met l'accent sur une expérience utilisateur fluide et une interface responsive.",
-      technologies: ["React", "Node.js", "MongoDB"],
-      lienGithub: "https://github.com/votre-username/projet-ecommerce",
-      lienDemo: "https://demo-ecommerce.com",
+        "Application web destinée aux back-offices permettant d'effectuer des tâches d'administration, de traitement et de suivi des demandes des citoyens de la commune :\n" +
+        "- Ajouter, modifier ou archiver des données de base\n" +
+        "- Traiter et suivre les demandes des citoyens\n" +
+        "- Gérer les rendez-vous des citoyens avec les élus\n" +
+        "- etc.",
+      technologies: ["React", "Django", "PostgreSQL"],
+      lienGithub: "https://github.com/Niangniang/Front_web_app_maire",
+      lienDemo: "#",
       stats: {
-        commits: 156,
-        stars: 24,
+        commits: 106,
+        stars: 21,
         forks: 8,
       },
-      features: ["Authentification", "Panier", "Paiement", "Admin Dashboard"],
+      features: [
+        "Authentification",
+        "Dashboard administrateur",
+        "Gestion des créneaux",
+        "Calendrier",
+        "Gestion des rendez-vous",
+        "Gestion des déclarations de naissance",
+        "Demandes de documents administratifs",
+        "Gestion des recettes fiscales",
+      ],
     },
     {
-      titre: "API de Gestion de Tâches",
-      type: "backend",
-      description: "Backend RESTful pour application de gestion de tâches",
+      titre: "Ma Mairie",
+      type: "mobile",
+      description: "Application mobile destinée aux citoyens de la commune",
       detailDescription:
-        "Une API RESTful robuste conçue pour gérer les opérations CRUD d'une application de gestion de tâches. L'API inclut l'authentification JWT, la validation des données, et une documentation Swagger complète.",
+        "Application permettant aux citoyens de bénéficier des services de la commune sans déplacement :\n" +
+        "- Réserver une infrastructure communale (stades, esplanades, maison des jeunes)\n" +
+        "- Prendre rendez-vous avec les élus\n" +
+        "- Réserver et payer des billets d'événements\n" +
+        "- Recevoir les actualités communales",
+      technologies: ["Flutter", "Go Router", "Deep Links", "Firebase"],
+      lienGithub: "https://github.com/Niangniang/mobile_pad_pa",
+      lienDemo: "#",
+      stats: {
+        commits: 186,
+        stars: 44,
+        forks: 6,
+      },
+      features: [
+        "Authentification",
+        "Gestion des événements",
+        "Gestion des rendez-vous",
+        "Paiement via Orange Money",
+        "Réservation et paiement de billets",
+        "Gestion des annonces",
+      ],
+    },
+    {
+      titre: "Dashboard Bakka",
+      type: "web",
+      description:
+        "Application d'administration pour les back-offices de l'application fintech \"Bakka\"",
+      detailDescription:
+        "Application web destinée aux back-offices permettant d'effectuer des tâches d'administration :\n" +
+        "- Ajouter, modifier ou archiver des données de base\n" +
+        "- Traiter et suivre les demandes clients\n" +
+        "- Consulter l'historique des transactions\n" +
+        "- Assurer le monitoring",
+      technologies: ["React", "Node.js", "MongoDB"],
+      lienGithub: "https://github.com/Niangniang/Front_web_app_maire",
+      lienDemo: "#",
+      stats: {
+        commits: 176,
+        stars: 74,
+        forks: 8,
+      },
+      features: [
+        "Authentification",
+        "Dashboard administrateur",
+        "Monitoring",
+        "Statistiques",
+        "Historique des transactions",
+        "Traitement des données de base",
+      ],
+    },
+    {
+      titre: "Backend Tacotac",
+      type: "backend",
+      description: "API RESTful pour la gestion des interventions d'artisans",
+      detailDescription:
+        "L'application permet aux clients de s'inscrire et commander les services d'un artisan selon leur corps de métier, sans déplacement.\n" +
+        "Elle propose également des contrats de maintenance aux clients et entreprises.\n" +
+        "Les clients peuvent signer des contrats de maintenance avec une fréquence définie pour différents corps de métier : mécanique, électricité, plomberie, etc.",
       technologies: ["Express", "TypeScript", "PostgreSQL"],
-      lienGithub: "https://github.com/votre-username/api-gestion-taches",
-      lienDemo: "https://api-tasks-demo.com",
+      lienGithub: "#",
+      lienDemo: "#",
       stats: {
         commits: 89,
-        stars: 12,
+        stars: 11,
         forks: 3,
       },
       features: [
-        "JWT Auth",
-        "CRUD Operations",
-        "Swagger Docs",
-        "Data Validation",
+        "Authentification JWT",
+        "Dashboard administrateur",
+        "Paiements : Orange Money, PayPal, PayTech",
+        "WebSockets",
+        "Viewsets et CRUD",
+        "Tests unitaires",
+        "Envoi d'emails et SMS",
+        "Redis et cache Redis",
+      ],
+    },
+    {
+      titre: "Backend Bakka",
+      type: "backend",
+      description: "API RESTful pour une application fintech Bakka",
+      detailDescription:
+        "L'application permet aux clients de créer un compte et gérer leur portefeuille électronique avec des cartes bancaires virtuelles.\n" +
+        "Elle propose des transactions interbancaires, des transferts banque-wallet et wallet-wallet.\n" +
+        "Les clients peuvent utiliser leur compte pour effectuer des paiements en ligne.",
+      technologies: ["Express", "TypeScript", "PostgreSQL"],
+      lienGithub: "https://github.com/Niangniang/Backend_bakka",
+      lienDemo: "#",
+      stats: {
+        commits: 99,
+        stars: 12,
+        forks: 4,
+      },
+      features: [
+        "Authentification JWT",
+        "Architecture microservices",
+        "Services de paiement",
+        "Opérations CRUD",
+        "Tests unitaires",
+        "Transactions interbancaires",
       ],
     },
   ];
